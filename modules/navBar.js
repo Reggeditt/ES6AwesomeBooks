@@ -1,4 +1,4 @@
-import DateTime from '../node_modules/luxon/src/datetime.js';
+import { DateTime } from './luxon.js';
 
 export const navbar = document.createElement('nav');
 export const booksList = document.createElement('span');
