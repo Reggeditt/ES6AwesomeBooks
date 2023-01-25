@@ -31,5 +31,5 @@ const renderNavbar = () => {
   setInterval(updateClock, 1000);
   document.body.insertBefore(navbar, document.body.children[0]);
   document.body.insertBefore(time, document.body.children[1]);
-}
+};
 export default renderNavbar;

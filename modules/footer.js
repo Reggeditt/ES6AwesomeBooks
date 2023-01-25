@@ -5,5 +5,5 @@ const renderFooter = () => {
   footerText.textContent = 'This is the footer. copyright 2023.';
   footer.appendChild(footerText);
   document.body.appendChild(footer);
-}
+};
 export default renderFooter;

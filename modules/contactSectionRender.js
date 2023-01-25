@@ -14,5 +14,5 @@ const renderContactSection = () => {
     `;
   contactInfoContainer.append(contactHeader, contactText, contactChanels);
   document.body.insertBefore(contactInfoContainer, document.body.children[2]);
-}
+};
 export default renderContactSection;

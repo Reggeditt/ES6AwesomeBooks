@@ -7,7 +7,7 @@ collectionHeader.className = 'collection-header';
 collectionHeader.textContent = 'All awesome books';
 bookCollectionSection.append(collectionHeader, bookCollectionContainer);
 export const bookEntryRemove = [];
- 
+
 const renderBooks = (data) => {
   for (let i = 0; i < data.collection.length; i += 1) {
     const bookEntryTitle = document.createElement('h3');
@@ -27,5 +27,5 @@ const renderBooks = (data) => {
     bookEntryContainer.append(bookEntryTitle, bookEntryRemove[i]);
   }
   document.body.insertBefore(bookCollectionSection, document.body.children[2]);
-}
+};
 export default renderBooks;

@@ -26,5 +26,5 @@ const removeBook = (data) => {
       }
     });
   }
-}
+};
 export default removeBook;
