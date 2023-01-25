@@ -24,10 +24,10 @@ const renderNavbar = () => {
   navlinks.append(booksList, newBookForm, contactInfo);
   const time = document.createElement('p');
   time.className = 'time';
-  function updateClock() {
+  const updateClock = () => {
     const now = DateTime.local();
     time.innerHTML = now.toJSDate().toString().substring(3, 21);
-  }
+  };
   setInterval(updateClock, 1000);
   document.body.insertBefore(navbar, document.body.children[0]);
   document.body.insertBefore(time, document.body.children[1]);
