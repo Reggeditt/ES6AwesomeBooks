@@ -1,6 +1,6 @@
 export const contactInfoContainer = document.createElement('div');
 
-export default function renderContactSection() {
+const renderContactSection = () => {
   contactInfoContainer.className = 'contact-info-container';
   const contactHeader = document.createElement('h3');
   contactHeader.textContent = 'Contact Information';
@@ -15,3 +15,4 @@ export default function renderContactSection() {
   contactInfoContainer.append(contactHeader, contactText, contactChanels);
   document.body.insertBefore(contactInfoContainer, document.body.children[2]);
 }
+export default renderContactSection;

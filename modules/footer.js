@@ -1,4 +1,4 @@
-export default function renderFooter() {
+const renderFooter = () => {
   const footer = document.createElement('footer');
   const footerText = document.createElement('small');
   footerText.className = 'footer-text';
@@ -6,3 +6,4 @@ export default function renderFooter() {
   footer.appendChild(footerText);
   document.body.appendChild(footer);
 }
+export default renderFooter;

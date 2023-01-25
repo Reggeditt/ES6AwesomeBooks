@@ -4,7 +4,7 @@ export const navbar = document.createElement('nav');
 export const booksList = document.createElement('span');
 export const newBookForm = document.createElement('span');
 export const contactInfo = document.createElement('span');
-export default function renderNavbar() {
+const renderNavbar = () => {
   navbar.className = 'navbar';
   const logo = document.createElement('div');
   logo.className = 'logo-container';
@@ -32,3 +32,4 @@ export default function renderNavbar() {
   document.body.insertBefore(navbar, document.body.children[0]);
   document.body.insertBefore(time, document.body.children[1]);
 }
+export default renderNavbar;

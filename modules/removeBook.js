@@ -1,6 +1,6 @@
 import { bookEntryRemove, bookCollectionContainer } from './renderCollection.js';
 
-export default function removeBook(data) {
+const removeBook = (data) => {
   for (let i = 0; i < bookEntryRemove.length; i += 1) {
     /* eslint-disable no-loop-func */
     bookEntryRemove[i].addEventListener('click', (event) => {
@@ -27,3 +27,4 @@ export default function removeBook(data) {
     });
   }
 }
+export default removeBook;
