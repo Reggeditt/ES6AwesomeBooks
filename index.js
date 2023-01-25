@@ -8,6 +8,7 @@ import renderContactSection, { contactInfoContainer } from './modules/contactSec
 import renderFooter from './modules/footer.js';
 
 const bookCollection = new BookCollection();
+console.log(bookCollection)
 window.addEventListener('load', () => {
   renderNavbar();
   renderBooks(bookCollection);
@@ -17,6 +18,7 @@ window.addEventListener('load', () => {
 });
 
 formEl.addEventListener('submit', () => {
+  console.log('event listener is working')
   const bookTitle = titleEl.value;
   const bookAuthor = nameEl.value || 'unknown';
   bookCollection.addBook(bookAuthor, bookTitle);

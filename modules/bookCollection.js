@@ -16,5 +16,6 @@ export default class BookCollection {
 
   updateLocalStorage() {
     window.localStorage.setItem('bookCollection', JSON.stringify(this.collection));
+    console.log('local storage has been updated')
   }
 }
